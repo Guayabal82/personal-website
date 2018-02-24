@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { PersonalWebsitePage } from './app.po';
 
-describe('personal-website App', () => {
-  let page: AppPage;
+describe('personal-website App', function() {
+  let page: PersonalWebsitePage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new PersonalWebsitePage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
